@@ -24,26 +24,36 @@ artist4 = Artist.create!(name: "Skream")
 artist5 = Artist.create!(name: "FKJ")
 artist6 = Artist.create!(name: "Taiki")
 
+artists_count = Artists.all.length
+puts "#{artists_count} artists were created."
+
 song1 = Song.create!( { title: "Six Degrees",
                         release_year: 2009,
                         genre: [electronic, dubstep],
                         artwork_url: "https://geo-media.beatport.com/image/495981.jpg",
-                        album: "One of Us" })
+                        album: "One of Us",
+                        artist: artist1 })
 
 song2 = Song.create!( { title: "Young Chimera",
                         release_year: 2013,
                         genre: electronic,
                         artwork_url: "http://audio-camp.com/wp-content/uploads/2014/01/Galimatias.jpg",
-                        album: "Young Chimera Single" })
+                        album: "Young Chimera Single",
+                        artist: artist2})
 
 song3 = Song.create!( { title: "Between Moods",
                         release_year: 2013,
                         genre: [electronic, funk],
                         artwork_url: "https://i1.sndcdn.com/artworks-000052975004-87q1w5-t500x500.jpg",
-                        album: "Time for a Change - EP" })
+                        album: "Time for a Change - EP",
+                        artist: artist5 })
 
 song4 = Song.create!( { title: "Exothermic Reaction",
                         release_year: 2011,
                         genre: [electronic, dance, dub],
                         artwork_url: "https://f4.bcbits.com/img/a3434869216_10.jpg",
-                        album: "Exothermic Reaction - Single" })
+                        album: "Exothermic Reaction - Single",
+                        artist: artist4 })
+
+songs_count = Songs.all.length
+puts "#{songs_count} songs were created."

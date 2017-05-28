@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #383838;
+}
+
+a {
+  text-decoration: none;
+  color: #9d9d9d;
+  &:visited {
+    color: #9d9d9d;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #ff9481;
+    text-decoration: none;
+  }
+}
+
+.logo {
+     width: 50px;
+     height: 50px;
+ }
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+li {
+list-style: none;
+margin: 0.5rem;
+font-weight: bold;
+text-align: left;
+color: red;
+}
+
+.song-title {
+  list-style: none;
+  text-align: center;
+  color: red;
+}
+
+footer {
+	background: black;
+	text-align: center;
+	padding-top: 0.5%;
+}
+
+.footer-link {
+	color: grey;
+}
+
+.footer-link:hover {
+	color: red;
+}

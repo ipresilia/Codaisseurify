@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   resources :genres
-  root 'songs#index'
+  root to: "pages#home"
 
-  resources :artists, only: [:show]
+  resources :artists
   resources :songs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

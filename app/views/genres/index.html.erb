@@ -1,0 +1,10 @@
+<h1>Genres</h1>
+
+<% @genres.each do |genre| %>
+  <p><%= link_to genre.name, genre_path(genre.id) %></p>
+<% end %>
+
+<button class="btn btn-default">
+  <%= link_to "Add new Genre", new_genre_path %>
+
+</button>
